@@ -27,7 +27,7 @@ function Navbar() {
           <Link to="/services">Services</Link>
         </li>
         <li>
-          <input type="search" placeholder="Search News" />
+          <input type="search" placeholder="Search News By Title" />
         </li>
       </ul>
     </div>

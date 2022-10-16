@@ -32,8 +32,10 @@ function Home() {
                 <h3 className="title">{item.title}</h3>
               </div>
               <h4 className="author"> Author :: {item.author}</h4>
-              <p className="des">{item.description}</p>
-              <p className="content">{item.content}</p>
+              <p className="des">
+                <h4>Description :: </h4>
+                {item.description}
+              </p>
               <button className="url">
                 <a href={item.url}>Read More</a>
               </button>
@@ -42,6 +44,9 @@ function Home() {
           </div>
         </div>
       ))}
+      <a href="#" class="top">
+        Back to Top &#8593;
+      </a>
     </div>
   );
 }

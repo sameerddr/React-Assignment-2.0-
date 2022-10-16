@@ -2,12 +2,19 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    line-height: 1.5;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
 }
 
 .navbar {
     width: 100%;
     background-color: black;
     position: fixed;
+    border-bottom: 1px solid white;
 }
 
 .navbar ul {
@@ -25,6 +32,7 @@
     text-decoration: none;
     color: white;
     font-size: larger;
+    font-family: "Kanit", sans-serif;
 }
 
 .navbar li a:hover {
@@ -72,16 +80,54 @@
     background-color: purple;
     height: auto;
     padding: 50px;
-    border-radius: 50px;
+    border-radius: 60px;
+    font-family: "Merriweather", serif;
 }
 
 .p1 {
     display: flex;
-    padding: 20px;
+    margin-bottom: 25px;
 }
 
 .title {
-    padding: 15px;
+    padding: 25px;
     text-align: center;
     margin-top: 20px;
+    text-transform: capitalize;
+}
+
+.url {
+    padding: 5px 10px;
+    background-color: rgb(61, 0, 227);
+    border: none;
+    border-radius: 20px;
+    margin: 10px 0px;
+}
+
+.url a {
+    text-decoration: none;
+    color: white;
+}
+
+.des {
+    margin: 8px 0px;
+}
+
+
+/* -----------------------------    back to top ------------- */
+
+.top {
+    --offset: 50px;
+    position: sticky;
+    bottom: 20px;
+    margin-right: 10px;
+    place-self: end;
+    margin-top: calc(100vh + var(--offset));
+    text-decoration: none;
+    padding: 10px;
+    font-family: sans-serif;
+    color: rgb(0, 0, 0);
+    background: whitesmoke;
+    border-radius: 100px;
+    white-space: nowrap;
 }
