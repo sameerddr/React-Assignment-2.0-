@@ -3,14 +3,13 @@ import React, { useState, useEffect } from "react";
 
 function Home() {
   const [data, setData] = useState([]);
-  // const [search, setsearch] = useState("");
+  const [search, setsearch] = useState("");
   const getapi = async () => {
     const apiData = await axios.get(
       "https://newsapi.org/v2/everything?q=tesla&from=2022-09-16&sortBy=publishedAt&apiKey=833ae0071f2345f085aa7a65dcd4e2d5"
     );
     setData(apiData.data.articles);
     console.log(apiData.data.articles);
-    // console.log(setdata);
   };
 
   useEffect(() => {
