@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-function Navbar() {
+function Navbar(props) {
   return (
     <div className="navbar">
       <ul>
@@ -27,7 +27,13 @@ function Navbar() {
           <Link to="/services">Services</Link>
         </li>
         <li>
-          <input type="search" placeholder="Search News By Title" />
+          <input
+            type="search"
+            placeholder="Search News By Title"
+            onChange={(e) => {
+              props.getfun(e.target.value);
+            }}
+          />
         </li>
       </ul>
     </div>

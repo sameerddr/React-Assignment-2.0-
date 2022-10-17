@@ -1,0 +1,133 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    line-height: 1.5;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    width: 100%;
+    background-color: black;
+    border-bottom: 1px solid white;
+    position: fixed;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar li {
+    list-style: none;
+    margin: 10px 10px;
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: white;
+    font-size: larger;
+    font-family: "Kanit", sans-serif;
+}
+
+.navbar li a:hover {
+    border-bottom: 1px solid white;
+    color: bisque;
+}
+
+.search {
+    color: white;
+    padding: 12px 75px;
+    margin-left: 400px;
+}
+
+.navbar input {
+    border: 2px solid black;
+    border-radius: 14px;
+    padding: 3px 17px;
+}
+
+.imgnav {
+    width: 220px;
+    height: 50px;
+    border-radius: 20px;
+}
+
+
+/* ------------------------- */
+
+.newsbox {
+    background-color: black;
+    color: white;
+    padding-top: 100px;
+}
+
+.postimg {
+    display: inline;
+    width: 350px;
+    height: 200px;
+    border-radius: 20px;
+}
+
+.box {
+    margin: 0 auto;
+    width: 950px;
+    background-color: purple;
+    height: auto;
+    padding: 50px;
+    border-radius: 60px;
+    font-family: "Merriweather", serif;
+}
+
+.p1 {
+    display: flex;
+    margin-bottom: 25px;
+}
+
+.title {
+    padding: 25px;
+    text-align: center;
+    margin-top: 20px;
+    text-transform: capitalize;
+}
+
+.url {
+    padding: 5px 10px;
+    background-color: rgb(61, 0, 227);
+    border: none;
+    border-radius: 20px;
+    margin: 10px 0px;
+}
+
+.url a {
+    text-decoration: none;
+    color: white;
+}
+
+.des {
+    margin: 8px 0px;
+}
+
+
+/* -----------------------------    back to top ------------- */
+
+.top {
+    --offset: 50px;
+    position: sticky;
+    bottom: 20px;
+    margin-right: 10px;
+    place-self: end;
+    margin-top: calc(100vh + var(--offset));
+    text-decoration: none;
+    padding: 10px;
+    font-family: sans-serif;
+    color: rgb(0, 0, 0);
+    background: whitesmoke;
+    border-radius: 100px;
+    white-space: nowrap;
+}
