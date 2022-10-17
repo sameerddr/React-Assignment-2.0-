@@ -7,7 +7,7 @@ function Home(props) {
   const [like, setlike] = useState(0);
   const [dislike, setdislike] = useState(0);
   const [likeactive, setlikeactive] = useState(false);
-  const [dislikeactive, setdislikeactive] = useState(false);
+  // const [dislikeactive, setdislikeactive] = useState(false);
 
   const getapi = async () => {
     const apiData = await axios.get(
