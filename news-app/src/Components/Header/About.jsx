@@ -1,11 +1,10 @@
 import React from "react";
-import Navbar from "./Navbar";
 import "./About.css";
 function About() {
   return (
     <div className="name">
-      <div>
-        <h2>About Us!</h2>
+      <div className="about">
+        <h2 className="head">About Us!</h2>
         <p>
           News-Crap is a Professional News,Blogs On Techs, Blogs on Political
           News , 24 hour latest News , All over the world , Some great topics to
@@ -46,8 +45,8 @@ function About() {
           Please give your support and love.
         </h4>
 
-        <h3>Thanks For Visiting Our Site</h3>
-        <h1>Have a nice day!</h1>
+        <h3 className="last">Thanks For Visiting Our Site</h3>
+        <h1 className="last">Have a nice day!</h1>
       </div>
     </div>
   );

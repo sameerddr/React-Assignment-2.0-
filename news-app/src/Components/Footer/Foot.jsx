@@ -19,6 +19,20 @@ function Foot() {
         <div className="date">
           <h4>Current Date & Time is {time}</h4>
         </div>
+        <div className="iconfoot">
+          <a href="">
+            <i class="fa-brands fa-facebook-messenger"></i>
+          </a>
+          <a href="">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="">
+            <i class="fa-brands fa-youtube"></i>
+          </a>
+          <a href="">
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+        </div>
       </div>
     </>
   );

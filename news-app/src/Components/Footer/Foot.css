@@ -5,6 +5,16 @@
 }
 
 .foot {
-    background-color: red;
+    background-color: rgb(100, 99, 99);
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.iconfoot i {
     color: white;
+    margin-left: 40px;
+}
+
+.iconfoot i:hover {
+    color: red;
 }

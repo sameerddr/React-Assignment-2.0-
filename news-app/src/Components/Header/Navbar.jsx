@@ -7,11 +7,12 @@ function Navbar(props) {
       <ul>
         <li>
           <Link to="/">
-            <img
+            News-Crap
+            {/* <img
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsJWcWFi-jLkp4UeeMH-x6WztwGV51iJMLuw&usqp=CAU"
               alt="error"
               className="imgnav"
-            />
+            /> */}
           </Link>
         </li>
         <li>

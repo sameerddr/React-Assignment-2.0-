@@ -11,7 +11,7 @@ function Home(props) {
 
   const getapi = async () => {
     const apiData = await axios.get(
-      "https://newsapi.org/v2/everything?q=tesla&from=2022-09-18&sortBy=publishedAt&apiKey=833ae0071f2345f085aa7a65dcd4e2d5"
+      "https://newsapi.org/v2/everything?q=tesla&from=2022-10-18&sortBy=publishedAt&apiKey=833ae0071f2345f085aa7a65dcd4e2d5"
     );
     setData(apiData.data.articles);
     console.log(apiData.data.articles);
