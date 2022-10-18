@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Theme from "./Theme";
 
 function Navbar(props) {
   return (
@@ -37,6 +38,7 @@ function Navbar(props) {
           />
         </li>
       </ul>
+      <Theme />
     </div>
   );
 }
