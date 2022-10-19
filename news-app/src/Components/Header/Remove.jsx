@@ -3,7 +3,7 @@ import React from "react";
 function Remove(props) {
   return (
     <div>
-      {/* <button onClick={() => this.deleteContact(props.key)}>Remove</button> */}
+      <button onClick={() => this.deleteContact(props.key)}>Remove</button>
     </div>
   );
 }
