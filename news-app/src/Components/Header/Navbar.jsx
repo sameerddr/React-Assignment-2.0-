@@ -1,20 +1,25 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import Theme from "./Theme";
+// import Theme from "./Theme";
+// import Theme from "./Theme";
 
 function Navbar(props) {
+  const [theme, setTheme] = useState("dark-theme");
+  function toggletheme() {
+    if (theme === "dark-mode") {
+      setTheme("light-theme");
+    } else {
+      setTheme("dark-theme");
+    }
+  }
+  useEffect(() => {
+    document.body.className = theme;
+  }, [theme]);
   return (
     <div className="navbar">
       <ul>
         <li>
-          <Link to="/">
-            News-Crap
-            {/* <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsJWcWFi-jLkp4UeeMH-x6WztwGV51iJMLuw&usqp=CAU"
-              alt="error"
-              className="imgnav"
-            /> */}
-          </Link>
+          <Link to="/">News-Crap</Link>
         </li>
         <li>
           <Link to="/">Home</Link>
@@ -37,8 +42,8 @@ function Navbar(props) {
             }}
           />
         </li>
+        <button onClick={() => toggletheme()}>Theme</button>
       </ul>
-      <Theme />
     </div>
   );
 }

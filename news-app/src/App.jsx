@@ -8,6 +8,7 @@ import Contact from "./Components/Header/Contact";
 import Services from "./Components/Header/Services";
 import About from "./Components/Header/About";
 import Foot from "./Components/Footer/Foot";
+import Theme from "./Components/Header/Theme";
 function App() {
   const [partochild, setpartochild] = useState("");
   function getinputValue(val) {
@@ -15,8 +16,8 @@ function App() {
     setpartochild(val);
   }
   return (
-    <div className="App">
-      <header className="App-header">
+    <div>
+      <header>
         <BrowserRouter>
           <Navbar getfun={getinputValue} />
           <Routes>

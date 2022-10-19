@@ -1,11 +1,23 @@
-import React from "react";
+// import React, { useEffect, useState } from "react";
+// import "./Theme.css";
+// function Theme() {
+//   const [mode, setMode] = useState("dark-theme");
+//   function toggletheme() {
+//     if (mode === "dark-mode") {
+//       setMode("dark-theme");
+//     } else {
+//       setMode("light-theme");
+//     }
+//   }
+//   useEffect(() => {
+//     document.body.className = mode;
+//   }, [mode]);
 
-function Theme() {
-  return (
-    <div>
-      <button>Theme</button>
-    </div>
-  );
-}
+//   return (
+//     <div>
+//       <button onClick={() => toggletheme()}>Theme</button>
+//     </div>
+//   );
+// }
 
-export default Theme;
+// export default Theme;
