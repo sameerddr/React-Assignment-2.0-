@@ -47,7 +47,7 @@ function Navbar(props) {
             }}
           />
         </li>
-        {/* <button onClick={() => toggletheme()}>Theme</button> */}
+        <button onClick={() => toggletheme()}>Theme</button>
       </ul>
       <a href="#" className="top">
         Back to Top &#8593;
