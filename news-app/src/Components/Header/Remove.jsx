@@ -1,11 +1,22 @@
-import React from "react";
+// import React from "react";
 
-function Remove(props) {
-  return (
-    <div>
-      <button onClick={() => this.deleteContact(props.key)}>Remove</button>
-    </div>
-  );
-}
+// function Remove(props) {
+//   const [posts, setPosts] = useState([]);
 
-export default Remove;
+//   // ...
+
+//   const deletePost = (props) => {
+//     client.delete(`${id}`);
+//     setPosts(
+//       posts.filter((post) => {
+//         return post.id !== id;
+//       })
+//     );
+//   };
+//   return (
+//     <div>
+// <button className="btn " onClick={(e) => this.deleteRow(post.id, e)}>Delete</button>      </div>
+//   );
+// }
+
+// export default Remove;

@@ -15,6 +15,11 @@ function Navbar(props) {
   useEffect(() => {
     document.body.className = theme;
   }, [theme]);
+  function myFunction() {
+    console.log("Working");
+    var element = document.body;
+    element.classList.toggle("dark-mode");
+  }
   return (
     <div className="navbar">
       <ul>
@@ -44,6 +49,12 @@ function Navbar(props) {
         </li>
         <button onClick={() => toggletheme()}>Theme</button>
       </ul>
+      <a href="#" className="top">
+        Back to Top &#8593;
+      </a>
+      <button className="btn" onClick={myFunction}>
+        Toggle Dark Mode
+      </button>
     </div>
   );
 }
