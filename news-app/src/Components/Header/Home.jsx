@@ -6,7 +6,7 @@ import Comment from "./Comment";
 import Loader from "./Loader";
 function Home(props) {
   const [data, setData] = useState([]);
-  const [loader, setloader] = useState(false);
+  // const [loader, setloader] = useState(false);
 
   const getapi = async () => {
     const apiData = await axios.get(
