@@ -4,7 +4,6 @@ import "./Home.css";
 import Like from "./Like";
 import Comment from "./Comment";
 import Loader from "./Loader";
-import Remove from "./Remove";
 function Home(props) {
   const [data, setData] = useState([]);
   const [loader, setloader] = useState(false);
@@ -22,18 +21,10 @@ function Home(props) {
     getapi();
   }, []);
 
-  function deleteuser(id) {
-    fetch(
-      `https://newsapi.org/v2/everything?q=world${id}&apiKey=fb5542083cca4ac5957e9a26f8a6ec5f`,
-      {
-        method: "DELETE",
-      }
-    ).then((res) => {
-      res.json().then((resp) => {
-        console.log(res);
-      });
-    });
-  }
+  const handleremove = (url) => {
+    const removedata = data.filter((data) => data.url !== url);
+    setData(removedata);
+  };
 
   return (
     <>
@@ -72,14 +63,17 @@ function Home(props) {
                     <p className="pub">
                       <h5>Publishing Time ::</h5> {item.publishedAt}
                     </p>
-                    <button onClick={() => deleteuser(item.url)}>Remove</button>
+                    <button
+                      onClick={() => handleremove(item.url)}
+                      className="remove">
+                      Remove
+                    </button>
                     <Like />
                     <Comment />
-                    {/* <Remove item={item.url} /> */}
                   </div>
                 </div>
               </div>
-            ))}{" "}
+            ))}
         </>
       ) : (
         <Loader />

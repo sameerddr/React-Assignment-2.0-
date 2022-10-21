@@ -18,7 +18,9 @@ function Comment() {
         value={commentText}
         onChange={handleInput}
       />
-      <button onClick={handleComment}>Post</button>
+      <button onClick={handleComment} className="post">
+        Post
+      </button>
       {comments.map((comment) => (
         <div>
           <h3>{comment}</h3>

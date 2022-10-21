@@ -1,5 +1,5 @@
 import "./App.css";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./Components/Header/Home";
 import Navbar from "./Components/Header/Navbar";
@@ -8,13 +8,13 @@ import Contact from "./Components/Header/Contact";
 import Services from "./Components/Header/Services";
 import About from "./Components/Header/About";
 import Foot from "./Components/Footer/Foot";
-import Theme from "./Components/Header/Theme";
 function App() {
   const [partochild, setpartochild] = useState("");
   function getinputValue(val) {
     console.log(val);
     setpartochild(val);
   }
+
   return (
     <div>
       <header>
@@ -29,6 +29,7 @@ function App() {
           </Routes>
         </BrowserRouter>
       </header>
+
       <Foot />
     </div>
   );

@@ -13,7 +13,11 @@ body {
 .btn {
     background-color: white;
     color: black;
-    margin-top: 100px;
+}
+
+.toggleBtn {
+    background-color: white;
+    color: black;
 }
 
 .navbar {
@@ -146,7 +150,35 @@ body {
     color: white;
 }
 
-.light-mode {
-    background-color: white;
-    color: black;
+.likebtn {
+    padding: 6px 20px;
+    background-color: red;
+    color: white;
+    border: none;
+    margin-right: 20px;
+    border-radius: 20px;
+    cursor: pointer;
 }
+
+.remove {
+    padding: 6px 15px;
+    background-color: red;
+    color: white;
+    border: none;
+    margin: 10px 0px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.post {
+    padding: 6px 15px;
+    background-color: red;
+    color: white;
+    border: none;
+    margin: 10px 0px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+
+/* --------------------------------------- Responsive Work */

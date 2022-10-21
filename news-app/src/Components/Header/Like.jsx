@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Button from "react-bootstrap/Button";
 function Like() {
   let initialvalue = 0;
   const [like, setlike] = useState(initialvalue);
@@ -7,16 +6,24 @@ function Like() {
 
   const handlelike = () => {
     setlike((pre) => pre + 1);
-    setdislike((pre) => pre - 1);
+    if (dislike > 0) {
+      setdislike((pre) => pre - 1);
+    }
   };
   const handledislike = () => {
     setdislike((pre) => pre + 1);
-    setlike((pre) => pre - 1);
+    if (like > 0) {
+      setlike((pre) => pre - 1);
+    }
   };
   return (
-    <div className="d-flex gap-3">
-      <Button onClick={handlelike}>Like {like}</Button>
-      <Button onClick={handledislike}>DisLike {dislike}</Button>
+    <div className="btn-like">
+      <button className="likebtn" onClick={handlelike}>
+        Like {like}
+      </button>
+      <button className="likebtn" onClick={handledislike}>
+        DisLike {dislike}
+      </button>
     </div>
   );
 }
